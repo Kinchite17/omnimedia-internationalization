@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Vocabulary Quiz</h1>
+    <p>Choose a mode and complete 20 random questions in each attempt.</p>
+    <a class="button button-secondary" href="./index.html">Back to Home</a>
+
+    <section class="card">
+      <h2>Mode Selection</h2>
+      <div class="mode-group">
+        <button class="button" id="mode-en-zh">English to Chinese</button>
+        <button class="button" id="mode-zh-en">Chinese to English</button>
+      </div>
+      <p class="meta" id="load-status">Loading vocabulary data...</p>
+    </section>
+
+    <section class="card hidden" id="quiz-panel">
+      <div class="meta" id="progress"></div>
+      <div class="question" id="question-text"></div>
+      <div class="meta" id="hint-text"></div>
+
+      <div class="options hidden" id="options-container"></div>
+
+      <div class="hidden" id="input-container">
+        <input type="text" id="answer-input" placeholder="Type your answer">
+        <div class="row">
+          <button class="button" id="submit-answer">Submit Answer</button>
+        </div>
+      </div>
+
+      <p class="status hidden" id="feedback"></p>
+      <div class="row">
+        <button class="button hidden" id="next-question">Next Question</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="result-panel">
+      <h2>Quiz Finished</h2>
+      <p id="final-score"></p>
+      <div class="actions">
+        <button class="button" id="restart-quiz">Restart Quiz</button>
+      </div>
+    </section>
+  </main>
+  <script src="quiz.js"></script>
+</body>
+</html>
