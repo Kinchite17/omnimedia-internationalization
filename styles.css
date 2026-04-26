@@ -269,7 +269,7 @@ p {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .mode-group {

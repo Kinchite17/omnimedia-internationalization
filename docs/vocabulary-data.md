@@ -1,17 +1,21 @@
 # Vocabulary Data Note
 
-The assignment requires quiz data derived from `英语四六级高频词汇.pdf`.
+The quiz dataset is extracted from `英语四六级高频词汇.pdf`.
 
 ## Extraction status
 
-- Automated PDF text extraction was attempted with `pypdf`.
-- The PDF text layer is font-encoded/garbled (for example, extracted content contains unreadable symbols instead of normal Chinese and English words), so direct parsing was not reliable.
+- Direct text extraction (`pypdf`, `pdfminer`, `pdftotext`) produced heavy font-encoding noise.
+- OCR extraction was used instead:
+  - Page rendering: `pymupdf`
+  - Text recognition: `rapidocr-onnxruntime`
+- Parsed output was cleaned and deduplicated into `data/vocabulary.json`.
 
-## Intermediate data file
+## Dataset file
 
-- A clean reusable intermediate dataset is provided at `data/vocabulary.json`.
-- Format: JSON array of objects, each containing:
+- Current file: `data/vocabulary.json`
+- Current size: 1683 entries
+- Format:
   - `word`: English vocabulary item
   - `meaning`: Chinese meaning
 
-This JSON file is loaded by `quiz.js` and can be updated independently without changing quiz logic.
+`quiz.js` loads this JSON directly, so quiz capacity scales automatically with dataset size.
