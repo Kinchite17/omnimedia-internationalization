@@ -6,18 +6,105 @@
   <title>Omnimedia Internationalization</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main class="container">
-    <h1>Omnimedia Internationalization</h1>
-    <p>
-      This website was established by the Internationalization Department of Zhejiang University Omnimedia
-      to help students of Chu Kochen Honors College improve their English proficiency.
-    </p>
-    <section class="card">
-      <h2>Learning Resources</h2>
-      <div class="actions">
-        <a class="button" href="./英语四六级高频词汇.pdf" download>Download 高频词汇 PDF</a>
-        <a class="button button-secondary" href="./quiz.html">Start Vocabulary Quiz</a>
+<body class="home-page">
+  <header class="topbar">
+    <div class="site-shell topbar-inner">
+      <a class="brand" href="./index.html">Omnimedia Internationalization</a>
+      <nav class="topnav">
+        <a href="#vocabulary-module">Vocabulary</a>
+        <a href="#sharing-module">Experience Sharing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">ZJU Omnimedia · English Resource Hub</p>
+        <h1>Learn Faster With Curated Vocabulary and Real Student Experience</h1>
+        <p>
+          This website was established by the Internationalization Department of Zhejiang University Omnimedia
+          to help students of Chu Kochen Honors College improve their English proficiency.
+        </p>
+        <div class="actions">
+          <a class="button" href="#vocabulary-module">Explore Vocabulary</a>
+          <a class="button button-secondary" href="#sharing-module">Browse PPT Sharing</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <h2>What You Can Use Here</h2>
+        <ul>
+          <li>CET-4/6 high-frequency vocabulary PDF download</li>
+          <li>Interactive vocabulary quiz in two directions</li>
+          <li>Student experience-sharing PPT collection with guided summaries</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="module-grid">
+      <article class="card module-card" id="vocabulary-module">
+        <p class="eyebrow">Module 01</p>
+        <h2>Vocabulary Module</h2>
+        <p>
+          Keep using the existing vocabulary resources for daily review and quick testing.
+        </p>
+        <div class="actions">
+          <a class="button" href="./%E8%8B%B1%E8%AF%AD%E5%9B%9B%E5%85%AD%E7%BA%A7%E9%AB%98%E9%A2%91%E8%AF%8D%E6%B1%87.pdf" download>Download High-Frequency Vocabulary PDF</a>
+          <a class="button button-secondary" href="./quiz.html">Start Vocabulary Quiz</a>
+        </div>
+      </article>
+
+      <article class="card module-card" id="sharing-module">
+        <p class="eyebrow">Module 02</p>
+        <h2>Experience Sharing Module</h2>
+        <p>
+          PPT resources are grouped by category so you can quickly find student sharing content that matches your goal.
+        </p>
+
+        <div class="resource-list">
+          <section class="resource-item">
+            <div class="resource-meta">
+              <span class="badge">Category: English Learning Sharing</span>
+              <h3>English Sharing PPT</h3>
+              <p class="summary">
+                GPT-Generated Summary: This presentation introduces practical English-learning methods, including planning routines,
+                building vocabulary habits, and improving confidence in speaking and writing through consistent practice.
+              </p>
+              <p class="author">Author: Zhou Yunshu (周云舒)</p>
+            </div>
+            <div class="resource-actions">
+              <a class="button" href="./%E8%8B%B1%E8%AF%AD%E5%88%86%E4%BA%AB%20%E5%91%A8%E4%BA%91%E8%88%92.pptx">Open PPT</a>
+            </div>
+          </section>
+
+          <section class="resource-item">
+            <div class="resource-meta">
+              <span class="badge">Category: Language & Culture Sharing</span>
+              <h3>Language Sharing PPT</h3>
+              <p class="summary">
+                GPT-Generated Summary: This presentation focuses on multilingual communication and cross-cultural understanding,
+                sharing how language awareness can support international collaboration and global learning perspectives.
+              </p>
+              <p class="author">Author: Li Yuxuan (黎语萱)</p>
+            </div>
+            <div class="resource-actions">
+              <a class="button" href="./%E8%AF%AD%E8%A8%80%E5%88%86%E4%BA%AB%20%E9%BB%8E%E8%AF%AD%E8%90%B1.pptx">Open PPT</a>
+            </div>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="card references">
+      <h2>Layout References</h2>
+      <p>
+        This page structure follows common patterns from established English-learning platforms: hero overview,
+        module-based navigation, and categorized resource cards.
+      </p>
+      <div class="reference-links">
+        <a href="https://learnenglish.britishcouncil.org/" target="_blank" rel="noopener noreferrer">British Council LearnEnglish</a>
+        <a href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener noreferrer">BBC Learning English</a>
+        <a href="https://quizlet.com/" target="_blank" rel="noopener noreferrer">Quizlet</a>
       </div>
     </section>
   </main>
